@@ -21,7 +21,7 @@ describe("main.jsx", () => {
  const ReactDOMClient = require("react-dom/client");
  const mockCreateRoot = jest.spyOn(ReactDOMClient, "createRoot");
  // Importa o main.jsx — isso aciona a renderização mockada
- require("../../main.jsx");
+ require("../main.jsx");
  // Verifica se o createRoot foi chamado
  expect(mockCreateRoot).toHaveBeenCalled();
  // Verifica se o root existe

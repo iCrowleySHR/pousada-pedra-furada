@@ -4,7 +4,7 @@
   "description": "Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.",
   "main": "next.config.js",
   "scripts": {
-    "dev": "next dev",
+    "run": "next dev",
     "build": "next build",
     "start": "next start",
     "test": "jest --watchAll"

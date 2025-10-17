@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Layout from "./src/components/Layout";
-import LoginPage from "./src/pages/LoginPage";
-import TarefasPage from "./src/pages/TarefasPage";
-import RelatoriosPage from "./src/pages/RelatoriosPage";
+import Layout from "./components/Layout";
+import LoginPage from "./pages/LoginPage";
+import TarefasPage from "./pages/TarefasPage";
+import RelatoriosPage from "./pages/RelatoriosPage";
 
 export default function App() {
     return (
