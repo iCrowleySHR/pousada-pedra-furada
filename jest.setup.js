@@ -1,5 +1,5 @@
-import '@testing-library/jest-dom';
-
+// import '@testing-library/jest-dom';
+5
 require("@testing-library/jest-dom"); 
  
 //  Silencia o warning do React sobre JSX transform antigo 
