@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
@@ -8,17 +9,7 @@ export default function Layout({ children }) {
       <main style={{ padding: "1rem" }}>
         {children}
       </main>
-      <footer
-        style={{
-          background: "#234",
-          color: "#fff",
-          textAlign: "center",
-          padding: "0.5rem",
-          marginTop: "1rem",
-        }}
-      >
-        © {new Date().getFullYear()} Pousada Pedra Furada
-      </footer>
+      <Footer />
     </div>
   );
 }
