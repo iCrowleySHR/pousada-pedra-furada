@@ -1,9 +1,9 @@
-module.exports = { 
-  presets: [ 
-    [ 
-      "@babel/preset-react", // Faz o Jest entender JSX
-      { runtime: "automatic" } //  Ativa o JSX transform moderno 
-    ], 
-    "next/babel"  // Faz o Jest entender Next.js e ES Modules.
-  ] 
-}; 
+module.exports = {
+  presets: [
+    [
+      "@babel/preset-react",
+      { runtime: "automatic" } // permite JSX sem precisar importar React manualmente
+    ],
+    "@babel/preset-env" // para suportar ES6+
+  ]
+};
