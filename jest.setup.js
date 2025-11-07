@@ -7,14 +7,20 @@ import { TextEncoder, TextDecoder } from "util";
 global.TextEncoder = global.TextEncoder || TextEncoder;
 global.TextDecoder = global.TextDecoder || TextDecoder;
 
-// Silencia warnings específicos do React (opcional)
+// Silencia warnings específicos do React e React Router (opcional)
 const originalWarn = console.warn;
 console.warn = (...args) => {
   if (
     typeof args[0] === "string" &&
-    args[0].includes("using an outdated JSX transform")
+    (
+      args[0].includes("using an outdated JSX transform") ||
+      args[0].includes("React Router Future Flag Warning") ||
+      args[0].includes("React Router will begin wrapping state updates") ||
+      args[0].includes("Relative route resolution within Splat routes")
+    )
   ) {
-    return;
+    return; // Ignora esses warnings
   }
-  originalWarn(...args);
+
+  originalWarn(...args); // Mantém os outros avisos normais
 };
