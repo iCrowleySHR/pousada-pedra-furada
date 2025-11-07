@@ -1,10 +1,10 @@
 # Pousada Pedra Furada - Sistema de Gestão de Tarefas
 
-Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.
+Aplicação web SPA desenvolvida em **React.js**, com foco em **CI/CD**, **TDD** e **boas práticas de versionamento**.
 
 ##  😁 Tecnologias 😁
 
-- Next.js 15+ 
+- React.js 15+ 
 - Node.js 20+ 
 - Prisma ORM 
 - MySQL (ou PostgreSQL) 
@@ -21,7 +21,7 @@ Aplicação web SPA desenvolvida em **Next.js**, com foco em **CI/CD**, **TDD** 
 ## 🤞 Instalação 🤞
 
 ```bash 
-git clone https://github.com/seuusuario/pousada-pedra-furada.git 
+git clone https://github.com/icrowleyshr/pousada-pedra-furada.git 
 cd pousada-pedra-furada 
 npm install 
 npm run dev
